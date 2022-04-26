@@ -14,6 +14,6 @@ The installation has been well tested to work on Ubuntu 20.04. (Can have issues 
 
 
 ## Features
-* Micro-service based architecture makes it super simple to scale. Docker images can be found at https://hub.docker.com/h1teshtr1path1
+* Micro-service based architecture makes it super simple to scale. Docker images can be found at https://hub.docker.com/h1teshtr1path1/pluto
 
 
