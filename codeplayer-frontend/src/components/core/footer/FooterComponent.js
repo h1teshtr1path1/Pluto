@@ -11,7 +11,7 @@ function FooterComponent(props) {
         <footer className={footerClass}>
             <ToastContainer />
             <div className="container text-center">
-                Made with &#9829; By <a href="http://saurass.in" target="_blank" className="text-decoration-none text-warning">Saurabh Srivastava</a>
+                Made with &#9829; for <a href="http://saurass.in" target="_blank" className="text-decoration-none text-warning">AKGEC Programmers.</a>
         </div>
         </footer>
     );

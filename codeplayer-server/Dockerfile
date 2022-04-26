@@ -1,6 +1,6 @@
 FROM node:12
 
-MAINTAINER Saurabh Srivastava (saurass.in)
+MAINTAINER Hitesh Tripathi 
 WORKDIR /codeplayer-server
 COPY package*.json ./
 

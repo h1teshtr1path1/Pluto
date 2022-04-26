@@ -23,8 +23,8 @@ const NavComponent = (props) => {
                     <div className="row ml-1">
                         <img alt="CodePlayer" className="logo-img ml-2 mt-1" src={logo} />
                         <div className="d-inline-block ml-2">
-                            <span className="d-inline text-danger">Code Player</span>
-                            <span className="d-block logo-info">Era Of Code Games</span>
+                            <span className="d-inline text-danger">Pluto</span>
+                            <span className="d-block logo-info">Hello programmers!</span>
                         </div>
                     </div>
                 </Link>

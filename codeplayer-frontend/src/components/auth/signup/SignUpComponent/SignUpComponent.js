@@ -107,8 +107,8 @@ function SignUpComponent() {
                         <div className="row justify-content-center align-content-center py-4">
                             <img className="logo-img mt-1" alt="CodePlayer" src={logo} />
                             <div className="d-inline-block ml-2">
-                                <span className="d-inline text-danger">Code Players</span>
-                                <span className="d-block logo-info">Era Of Code Games</span>
+                                <span className="d-inline text-danger">Pluto</span>
+                                <span className="d-block logo-info">Hello Programmers!</span>
                             </div>
                         </div>
                         <h5 className="text-center pb-3">Register Here</h5>

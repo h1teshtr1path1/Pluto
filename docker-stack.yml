@@ -2,7 +2,7 @@ version: '3'
 
 services:
   redis:
-    image: redis:alpine
+    image: h1teshtr1path1/pluto:cp_redis
     ports:
       - 6379:6379
     networks:
@@ -11,14 +11,14 @@ services:
   frontend:
     env_file:
       - ./frontend.env
-    image: saurass/codeplayer_frontend:latest
+    image: h1teshtr1path1/pluto-frontend:latest
     ports:
       - 80:80
     networks:
       - cpnet
 
   server:
-    image: saurass/codeplayer_server:latest
+    image: h1teshtr1path1/pluto-server:latest
     ports:
       - 5001:5001
     env_file:
@@ -28,7 +28,7 @@ services:
 
   worker:
     build: .
-    image: saurass/codeplayer_worker:latest
+    image: h1teshtr1path1/pluto-server:latest
     env_file:
       - ./worker.env
     volumes:

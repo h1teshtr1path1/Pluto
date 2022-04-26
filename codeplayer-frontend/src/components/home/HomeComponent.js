@@ -153,15 +153,11 @@ function HomeComponent() {
 
             <div className="jumbotron jumbotron-fluid bg-dark text-light">
                 <div className="container">
-                    <h1 className="display-4">Code Player</h1>
-                    <p className="lead">The ultimate code gaming platform for geeky coders</p>
+                    <h1 className="display-4">Pluto</h1>
+                    <p className="lead">Coding Platform for AKGEC Students.</p>
 
                     <div className="align-items-center text-center my-5">
-                        <h2 className="py-3">Like What We do ?</h2>
-                        <button className="btn btn-lg btn-warning text-light" data-toggle="modal" data-target="#paymentModal">Buy Me A Coffee ?</button>
-
-                        <h4 className="text-center mt-5">Want to create Contest? <a className="text-decoration-none" href="http://saurass.in" target="_blank"><span className="contact-me">Contact me !</span></a></h4>
-
+                        <h2 className="py-3">Hello! You can use me for coding contests and practice.</h2>
                     </div>
                 </div>
             </div>
@@ -173,7 +169,7 @@ function HomeComponent() {
             <div className="container">
                 <div className="row">
                     <div className="col-md-6 col-sm-12 justify-content-center">
-                        <h2>We Speak 2 Languages</h2>
+                        <h2>Pluto speak 2 languages.</h2>
                         <p>We respect all the languages, but speak only few.</p>
 
                         <ul className="hideBulletInli">
@@ -183,7 +179,7 @@ function HomeComponent() {
                                 <IconContext.Provider value={{ size: "4em" }}>
                                     <FaCuttlefish className="mr-4" />
                                 </IconContext.Provider>
-                                <span>C/C++ for all those competitors out there.</span>
+                                <span>C/C++ for all competitive programmers.</span>
                             </li>
 
                             <li className="d-flex align-items-center my-4">
@@ -191,7 +187,7 @@ function HomeComponent() {
                                 <IconContext.Provider value={{ size: "4em" }}>
                                     <DiPython className="mr-4" />
                                 </IconContext.Provider>
-                                <span>python3 for all open source enthusiasts</span>
+                                <span>Python3 for those who weren't able to learn C++ becuase of Syntax.</span>
                             </li>
                             
                         </ul>
