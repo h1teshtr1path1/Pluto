@@ -1,3 +1,4 @@
+
 require("dotenv").config();
 const express = require("express");
 const mongoose = require('mongoose');
@@ -20,7 +21,7 @@ const app = express();
 app.set('port', process.env.PORT || 5001);
 
 // Database
-mongoose.connect("mongodb://mongo/", {
+mongoose.connect(process.env.DATABASE, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useCreateIndex: true
@@ -53,7 +54,7 @@ const server = app.listen(port, () => {
 });
 
 const io = require("socket.io")(server);
-io.adapter(redisAdapter({ host: "http://127.0.0.1", port: "6379" }));
+io.adapter(redisAdapter({ host: process.env.REDIS_HOST, port: process.env.REDIS_PORT }));
 
 // Start Socket IO Listener
 io.on('connection', (socket) => {

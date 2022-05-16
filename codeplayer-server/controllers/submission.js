@@ -1,7 +1,7 @@
 const { check, validationResult } = require("express-validator");
 const { ers } = require("./error");
 const Redis = require("./redis");
-const Submission = require("../models/submission")
+const Submission = require("../models/submission");
 const S3 = require("./s3controller");
 
 exports.makesubmission = (req, res) => {

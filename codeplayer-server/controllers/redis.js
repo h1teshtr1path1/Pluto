@@ -1,8 +1,10 @@
-const RedisSMQ = require("rsmq");
+var redis  = require("redis"),
+    client = redis.createClient(6379, "http:/127.0.0.1");
 
-exports.push = (queueName, message) => {
-    const rsmq = new RedisSMQ( {host: "http://127.0.0.1", port: "6379", ns: "rsmq"} );
-    rsmq.sendMessage({ qname: queueName, message: message}, function (err, resp) {
-        rsmq.quit();
-    });
-}
+client.on("error", function (err) {
+  console.log("Redis error encountered", err);
+});
+
+client.on("end", function() {
+  console.log("Redis connection closed");
+});

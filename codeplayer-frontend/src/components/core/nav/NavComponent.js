@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../../../assets/images/logo/logo.svg';
+import logo from '../../../assets/images/logo/logo.png';
 import "./NavComponent.css";
 import { withRouter, Link } from 'react-router-dom';
 import { isAuthenticated } from '../../../services/auth/auth';
@@ -21,10 +21,10 @@ const NavComponent = (props) => {
             <div className={navBorderClass}>
                 <Link onClick={toggleCollapse} className="navbar-brand" to="/">
                     <div className="row ml-1">
-                        <img alt="CodePlayer" className="logo-img ml-2 mt-1" src={logo} />
+                        <img alt="CodePlayer" className="logo-img ml-2 mt-1" style={{width:"10%", height:"2%"}} src={logo} />
                         <div className="d-inline-block ml-2">
-                            <span className="d-inline text-danger">Pluto</span>
-                            <span className="d-block logo-info">Hello programmers!</span>
+                            {/* <span className="d-inline text-danger">Pluto</span> */}
+                            {/* <span className="d-block logo-info">Hello programmers!</span> */}
                         </div>
                     </div>
                 </Link>

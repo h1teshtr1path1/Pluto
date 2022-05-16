@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./HomeComponent.css";
-import logo from '../../assets/images/logo/logo.svg';
+import logo from '../../assets/images/logo/coding.jpeg';
 import { IconContext } from "react-icons";
 import { DiPython } from "react-icons/di";
 import { FaCuttlefish } from "react-icons/fa";
@@ -163,7 +163,7 @@ function HomeComponent() {
             </div>
 
             <div className="container justify-content-center text-center py-5">
-                <h1>Hello World</h1>
+                <h1>Hello AKGECians!</h1>
             </div>
 
             <div className="container">
@@ -187,7 +187,7 @@ function HomeComponent() {
                                 <IconContext.Provider value={{ size: "4em" }}>
                                     <DiPython className="mr-4" />
                                 </IconContext.Provider>
-                                <span>Python3 for those who weren't able to learn C++ becuase of Syntax.</span>
+                                <span>Python3 for those who Finds C++ Tough!!</span>
                             </li>
                             
                         </ul>
