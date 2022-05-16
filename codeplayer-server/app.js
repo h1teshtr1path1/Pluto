@@ -17,10 +17,10 @@ const registerSocketListeners = require("./controllers/socket");
 
 // Boot
 const app = express();
-app.set('port', process.env.PORT || 4000);
+app.set('port', process.env.PORT || 5001);
 
 // Database
-mongoose.connect(process.env.DATABASE, {
+mongoose.connect("mongodb://mongo/", {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useCreateIndex: true
@@ -47,13 +47,13 @@ app.use((req, res) => {
 });
 
 // Start server
-const port = process.env.PORT || 4000;
+const port = process.env.PORT || 5001;
 const server = app.listen(port, () => {
     console.log("running server...", port);
 });
 
 const io = require("socket.io")(server);
-io.adapter(redisAdapter({ host: process.env.REDIS_HOST, port: process.env.REDIS_PORT }));
+io.adapter(redisAdapter({ host: "http://127.0.0.1", port: "6379" }));
 
 // Start Socket IO Listener
 io.on('connection', (socket) => {

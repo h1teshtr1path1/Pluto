@@ -116,7 +116,8 @@ exports.signout = (req, res) => {
 // MiddleWares
 // JWT verification, it will add auth property to the req
 exports.isSignedIn = expressJwt({
-    secret: process.env.SECRET,
+    secret: 'secret',
+    algorithms: ['HS256'],
     userProperty: "auth"
 });
 

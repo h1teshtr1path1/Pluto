@@ -10,8 +10,6 @@ RUN yarn build
 
 FROM nginx:alpine
 
-MAINTAINER Hitesh Tripathi
-
 COPY nginx/nginx.conf /etc/nginx/conf.d/default.conf
 COPY --from=build /codeplayer_frontend/build /usr/share/nginx/html
 EXPOSE 80

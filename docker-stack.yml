@@ -2,7 +2,7 @@ version: '3'
 
 services:
   redis:
-    image: h1teshtr1path1/pluto:cp_redis
+    image: redis:6.2.5-alpine
     ports:
       - 6379:6379
     networks:
@@ -28,7 +28,7 @@ services:
 
   worker:
     build: .
-    image: h1teshtr1path1/pluto-server:latest
+    image: h1teshtr1path1/pluto-worker:latest
     env_file:
       - ./worker.env
     volumes:
